@@ -1,13 +1,37 @@
-venv/
-node_modules/
-
+# Python
 __pycache__/
-.pytest_cache/
-
-.env
-.env.*
-
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
 dist/
 build/
 
-*.pyc
+# Environment
+.env
+*.env
+
+# Database
+*.db
+*.sqlite
+
+# Logs
+*.log
+
+# Node
+node_modules/
+dist/
+.next/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Alembic
+alembic/versions/*.py
