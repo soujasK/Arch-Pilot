@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #111827;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #263354;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #334d7a;
+  }
+}
+
+@layer components {
+  /* ReactFlow canvas dark mode overrides */
+  .react-flow__background {
+    background-color: #0a0e1a !important;
+  }
+
+  .react-flow__minimap {
+    background-color: #111827 !important;
+    border: 1px solid #1e2d45 !important;
+    border-radius: 6px !important;
+  }
+
+  .react-flow__controls {
+    background-color: #111827 !important;
+    border: 1px solid #1e2d45 !important;
+    border-radius: 6px !important;
+  }
+
+  .react-flow__controls button {
+    background-color: #1a2234 !important;
+    border-color: #263354 !important;
+    color: #94a3b8 !important;
+  }
+
+  .react-flow__controls button:hover {
+    background-color: #1f2a3d !important;
+    color: #e2e8f0 !important;
+  }
+
+  /* Code-style monospace text */
+  .font-code {
+    font-family: "JetBrains Mono", "Fira Code", monospace;
+    font-size: 0.8rem;
+  }
+
+  /* Glowing card border on hover */
+  .card-glow {
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  .card-glow:hover {
+    border-color: #3b82f6 !important;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.15);
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-mesh {
+    background-image:
+      radial-gradient(at 20% 25%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
+      radial-gradient(at 80% 75%, rgba(139, 92, 246, 0.05) 0%, transparent 50%);
+  }
+}
