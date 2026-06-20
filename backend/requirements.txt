@@ -22,4 +22,4 @@ sniffio
 certifi
 httpcore
 idna
-psgcopg2-binary
+psycopg2-binary
