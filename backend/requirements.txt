@@ -10,3 +10,15 @@ httpx
 structlog
 redis
 python-dotenv
+pytest
+pytest-asyncio
+pytest-cov
+aiosqlite
+greenlet
+mako
+typing-extensions
+anyio
+sniffio
+certifi
+httpcore
+idna
