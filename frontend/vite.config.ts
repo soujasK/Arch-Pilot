@@ -14,11 +14,11 @@ export default defineConfig({
     proxy: {
       // Proxy API requests to the FastAPI backend during development
       "/repositories": {
-        target: "http://localhost:8000",
+        target: "https://arch-pilot.onrender.com/",
         changeOrigin: true,
       },
       "/health": {
-        target: "http://localhost:8000",
+        target: "https://arch-pilot.onrender.com/",
         changeOrigin: true,
       },
     },

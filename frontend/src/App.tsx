@@ -96,7 +96,7 @@ type View = "home" | "graph" | "impact" | "report" | "chat";
 
 // ─── API Client ───────────────────────────────────────────────────────────────
 
-const API_BASE = "http://localhost:8000/api/v1";
+const API_BASE = "https://arch-pilot.onrender.com/";
 
 async function apiPost<T>(path: string, body: unknown): Promise<T> {
   const res = await fetch(`${API_BASE}${path}`, {
@@ -1053,7 +1053,7 @@ export default function App() {
           {!selectedRepo && <div style={{ flex: 1 }} />}
 
           <a
-            href="http://localhost:8000/docs"
+            href="https://arch-pilot.onrender.com/"
             target="_blank"
             style={{ color: COLORS.textDim, fontSize: 12, textDecoration: "none" }}
           >

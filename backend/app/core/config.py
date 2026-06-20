@@ -28,10 +28,10 @@ class Settings(BaseSettings):
     ALLOWED_ORIGINS: list[str] = ["http://localhost:3000", "http://localhost:5173","http://127.0.0.1:8000","http://localhost:3001","https://arch-pilot-2.onrender.com/"]
 
     # Database
-    DATABASE_URL: str = "postgresql+asyncpg://archpilot:archpilot@localhost:5432/archpilot"
+    DATABASE_URL: str = os.getenv("DATABASE_URL")
 
     # Redis
-    REDIS_URL: str = "redis://localhost:6379/0"
+    REDIS_URL: str = os.getenv("REDIS_URL")
     CACHE_TTL_SECONDS: int = 3600
 
     # GitHub
