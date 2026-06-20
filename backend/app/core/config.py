@@ -25,7 +25,7 @@ class Settings(BaseSettings):
 
     # API
     API_V1_PREFIX: str = "/api/v1"
-    ALLOWED_ORIGINS: list[str] = ["http://localhost:3000", "http://localhost:5173","http://127.0.0.1:8000","http://localhost:3001"]
+    ALLOWED_ORIGINS: list[str] = ["http://localhost:3000", "http://localhost:5173","http://127.0.0.1:8000","http://localhost:3001","https://arch-pilot-2.onrender.com"]
 
     # Database
     DATABASE_URL: str = "postgresql+asyncpg://archpilot:archpilot@localhost:5432/archpilot"
