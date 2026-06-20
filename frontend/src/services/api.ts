@@ -13,7 +13,7 @@ import type {
   TopologicalSort,
 } from "../types";
 
-const BASE_URL ="https://arch-pilot.onrender.com/";
+const BASE_URL ="https://arch-pilot.onrender.com";
 
 const api: AxiosInstance = axios.create({
   baseURL: BASE_URL,
