@@ -978,14 +978,14 @@ export default function App() {
 
   // Load existing repos on mount
   useEffect(() => {
-    apiGet<Repository[]>("/repositories").then(setRepos).catch(() => {});
+    apiGet<Repository[]>("/api/v1/repositories").then(setRepos).catch(() => {});
   }, []);
 
   const handleAnalyze = useCallback(async (url: string) => {
     setLoading(true);
     setError(undefined);
     try {
-      const repo = await apiPost<Repository>("/repositories/analyze", { url });
+      const repo = await apiPost<Repository>("/api/v1/repositories/analyze", { url });
       setRepos((prev) => {
         const without = prev.filter((r) => r.id !== repo.id);
         return [repo, ...without];

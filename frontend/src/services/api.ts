@@ -16,7 +16,7 @@ import type {
 const BASE_URL ="https://arch-pilot.onrender.com";
 
 const api: AxiosInstance = axios.create({
-  baseURL: BASE_URL,
+  baseURL: `${BASE_URL}/api/v1`,
   headers: { "Content-Type": "application/json" },
   timeout: 120_000, // 2 min — analysis takes time
 });
